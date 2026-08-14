@@ -88,19 +88,6 @@ The public repository includes dashboard screenshots, but not the original Table
 └── requirements.txt
 ```
 
-## Reproducing the project
-
-The notebooks are written for **Azure Databricks** and use Databricks-provided `spark`, `dbutils`, Delta Lake and `display` functionality.
-
-1. Provision an ADLS Gen2 account and a Databricks workspace with access to it.
-2. Download the seven public datasets listed in [`docs/data_sources.md`](docs/data_sources.md).
-3. Rename and land the source files as `mps.csv`, `flytipping.csv`, `csi.csv`, `imd.csv`, `income.csv`, `population.csv` and `unemployment.csv`.
-4. Set the environment variables shown in [`config/.env.example`](config/.env.example) on the Databricks cluster.
-5. Import and run the notebooks in numerical order.
-6. Connect Tableau to the `cbda_tableau` serving schema through a Databricks SQL Warehouse.
-
-Public notebook outputs and workspace-specific endpoints have been removed deliberately. The notebooks retain the complete transformation and modelling logic.
-
 ## Technology
 
 Azure Data Factory · ADLS Gen2 · Azure Databricks · PySpark · Delta Lake · Spark SQL · pandas · scikit-learn · SciPy · MLflow · Tableau · draw.io
