@@ -1,0 +1,43 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Databricks and Spark local artefacts
+.databricks/
+metastore_db/
+spark-warehouse/
+derby.log
+
+# Data and model artefacts
+data/raw/
+data/processed/
+*.parquet
+*.delta
+*.csv
+*.xlsx
+*.xls
+mlruns/
+
+# Tableau connection-bearing workbooks
+*.twb
+*.twbx
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.tmp
+*.log
