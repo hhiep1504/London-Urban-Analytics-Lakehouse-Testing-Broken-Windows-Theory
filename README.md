@@ -75,7 +75,6 @@ The public repository includes dashboard screenshots, but not the original Table
 │   └── data_dictionary.md
 ├── docs/
 │   ├── architecture.drawio
-│   ├── architecture.png
 │   ├── data_sources.md
 │   ├── methodology.md
 │   └── dashboards/
